@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "537217650388",
+    "project_id": "trackbet-e69b9",
+    "storage_bucket": "trackbet-e69b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:537217650388:android:d989b0970612da62437541",
+        "android_client_info": {
+          "package_name": "com.example.trackbet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "537217650388-naic30ovegpe493dk4spln79qsokklh9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2TgWhRfEhmBqpotkqriyK-D8bh4T9VKM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "537217650388-naic30ovegpe493dk4spln79qsokklh9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
