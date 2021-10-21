@@ -7,9 +7,11 @@ class MeuApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
+      title: 'Trackbet',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        fontFamily: "Montserrat",
+        primarySwatch: Colors.green,
       ),
       home: const OnboardingPage(),
     );

@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, duplicate_ignore
+
 import 'package:flutter/material.dart';
 
 class OnboardingPage extends StatelessWidget {
@@ -5,6 +7,131 @@ class OnboardingPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Material(
+      child: Scaffold(
+        backgroundColor: Colors.greenAccent,
+        body: Center(
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  Color(0xFF33443c),
+                  Color(0xFF87cb28),
+                  Color(0xFFFF0000),
+                ],
+              ),
+            ),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  "TrackBet",
+                  style: TextStyle(
+                      fontSize: 40,
+                      fontFamily: "Montserrat",
+                      fontWeight: FontWeight.bold,
+                      color: Colors.white),
+                ),
+                SizedBox(height: 10),
+                Text(
+                  "The perfect place to track your bets.",
+                  style: TextStyle(
+                      fontSize: 17,
+                      fontWeight: FontWeight.normal,
+                      color: Colors.white),
+                ),
+                SizedBox(
+                  height: 60,
+                ),
+                Image.asset("images/logo_ajustado.png"),
+                SizedBox(
+                  height: 60,
+                ),
+                Column(
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.only(
+                        left: 24.0,
+                        right: 24.0,
+                      ),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            primary: Colors.green.shade900, // background
+                            onPrimary: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            )),
+                        onPressed: () {},
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          // ignore: prefer_const_literals_to_create_immutables
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.all(16),
+                              child: Text(
+                                "Login",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      height: 40,
+                    ),
+                    Text(
+                      "Don't have a account? Register here.",
+                      style: TextStyle(
+                        color: Colors.white,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 15,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(
+                        left: 24.0,
+                        right: 24.0,
+                      ),
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            primary: Colors.green.shade900, // background
+                            onPrimary: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(30),
+                            )),
+                        onPressed: () {},
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          // ignore: prefer_const_literals_to_create_immutables
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.all(16),
+                              child: Text(
+                                "Sign Up",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
   }
 }
