@@ -9,20 +9,10 @@ class OnboardingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Scaffold(
-        backgroundColor: Colors.greenAccent,
+        backgroundColor: Color(0xFF33443c),
         body: Center(
-          child: Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  Color(0xFF33443c),
-                  Color(0xFF87cb28),
-                  Color(0xFFFF0000),
-                ],
-              ),
-            ),
+          child: Padding(
+            padding: const EdgeInsets.all(20),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
@@ -43,11 +33,11 @@ class OnboardingPage extends StatelessWidget {
                       color: Colors.white),
                 ),
                 SizedBox(
-                  height: 60,
+                  height: 40,
                 ),
                 Image.asset("images/logo_ajustado.png"),
                 SizedBox(
-                  height: 60,
+                  height: 40,
                 ),
                 Column(
                   children: [
@@ -58,12 +48,14 @@ class OnboardingPage extends StatelessWidget {
                       ),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.green.shade900, // background
+                            primary: Colors.white, // background
                             onPrimary: Colors.white,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
                             )),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/login');
+                        },
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           // ignore: prefer_const_literals_to_create_immutables
@@ -75,6 +67,7 @@ class OnboardingPage extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
+                                  color: Color(0xFF33443c),
                                 ),
                               ),
                             )
@@ -101,7 +94,7 @@ class OnboardingPage extends StatelessWidget {
                       ),
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
-                            primary: Colors.green.shade900, // background
+                            primary: Colors.white, // background
                             onPrimary: Colors.white,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(30),
@@ -118,6 +111,7 @@ class OnboardingPage extends StatelessWidget {
                                 style: TextStyle(
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
+                                  color: Color(0xFF33443c),
                                 ),
                               ),
                             )
