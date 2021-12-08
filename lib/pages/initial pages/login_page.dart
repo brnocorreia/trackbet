@@ -132,7 +132,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 15
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(
@@ -144,7 +144,9 @@ class _LoginPageState extends State<LoginPage> {
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(30),
                         )),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/dashboard');
+                    },
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       // ignore: prefer_const_literals_to_create_immutables

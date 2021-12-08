@@ -1,8 +1,10 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:trackbet/pages/login_page.dart';
-import 'package:trackbet/pages/onboarding_page.dart';
+import 'package:trackbet/pages/initial%20pages/login_page.dart';
+import 'package:trackbet/pages/initial%20pages/onboarding_page.dart';
+
+import 'pages/inside app pages/dashboard_page.dart';
 
 class MeuApp extends StatelessWidget {
   const MeuApp({Key? key}) : super(key: key);
@@ -22,11 +24,13 @@ class MeuApp extends StatelessWidget {
         theme: ThemeData(
           fontFamily: "Montserrat",
           primarySwatch: Colors.green,
+          primaryColor: Color(0xFF33443c),
         ),
         // initialRoute: '/onboarding',
         routes: {
           '/onboarding': (context) => OnboardingPage(),
           '/login': (context) => LoginPage(),
+          '/dashboard': (context) => DashboardPage(),
         },
         home: OnboardingPage(),
       ),
