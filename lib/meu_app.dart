@@ -9,19 +9,28 @@ class MeuApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Trackbet',
-      theme: ThemeData(
-        fontFamily: "Montserrat",
-        primarySwatch: Colors.green,
-      ),
-      // initialRoute: '/onboarding',
-      routes: {
-        '/onboarding': (context) => OnboardingPage(),
-        '/login': (context) => LoginPage(),
+    return GestureDetector(
+      onTap: (){
+        FocusScopeNode currentFocus = FocusScope.of(context);
+
+        if (!currentFocus.hasPrimaryFocus) {
+          currentFocus.unfocus();
+        }
       },
-      home: OnboardingPage(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Trackbet',
+        theme: ThemeData(
+          fontFamily: "Montserrat",
+          primarySwatch: Colors.green,
+        ),
+        // initialRoute: '/onboarding',
+        routes: {
+          '/onboarding': (context) => OnboardingPage(),
+          '/login': (context) => LoginPage(),
+        },
+        home: OnboardingPage(),
+      ),
     );
   }
 }
