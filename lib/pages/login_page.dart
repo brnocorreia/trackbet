@@ -20,7 +20,7 @@ class _LoginPageState extends State<LoginPage> {
       backgroundColor: Color(0xFF33443c),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.only(top: 50),
+          padding: EdgeInsets.only(top: 100),
           child: Form(
             key: formKey,
             child: Column(
@@ -28,19 +28,8 @@ class _LoginPageState extends State<LoginPage> {
               children: [
                 Image.asset(
                   "images/logo_ajustado.png",
-                  height: 150,
-                  width: 150,
-                ),
-                SizedBox(
-                  height: 50,
-                ),
-                Text(
-                  "Welcome back, Tracker.",
-                  style: TextStyle(
-                    fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
-                  ),
+                  height: 100,
+                  width: 100,
                 ),
                 SizedBox(
                   height: 15,
@@ -68,24 +57,18 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide(
                           color: Colors.white,
-                          width: 3.0,
+                          width: 1.0,
                         ),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
                         borderSide: BorderSide(
                           color: Colors.white,
-                          width: 6.0,
+                          width: 2.0,
                         ),
                       ),
                     ),
                     keyboardType: TextInputType.emailAddress,
-                    validator: (value) {
-                      if (value!.isEmpty) {
-                        return 'Informe o email corretamente!';
-                      }
-                      return null;
-                    },
                   ),
                 ),
                 Padding(
@@ -113,26 +96,43 @@ class _LoginPageState extends State<LoginPage> {
                         borderRadius: BorderRadius.circular(10),
                         borderSide: BorderSide(
                           color: Colors.white,
-                          width: 3.0,
+                          width: 1.0,
                         ),
                       ),
                       focusedBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(30),
                         borderSide: BorderSide(
                           color: Colors.white,
-                          width: 6.0,
+                          width: 2.0,
                         ),
                       ),
                     ),
-                    validator: (value) {
-                      if (value!.isEmpty) {
-                        return 'Inform your password!';
-                      } else if (value.length < 6) {
-                        return 'Only 6+ characters passwords allowed';
-                      }
-                      return null;
-                    },
                   ),
+                ),
+                SizedBox(
+                  height: 5,
+                ),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 24.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      TextButton(
+                            onPressed: () {},
+                            child: Text(
+                              "Forgot password?",
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                    ],
+                  ),
+                ),
+                SizedBox(
+                  height: 30,
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(
@@ -164,8 +164,9 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 SizedBox(
-                  height: 30,
+                  height: 20,
                 ),
+                
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
