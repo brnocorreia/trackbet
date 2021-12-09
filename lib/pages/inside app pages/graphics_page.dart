@@ -27,10 +27,10 @@ class _GraphicsPageState extends State<GraphicsPage> {
                       height: 30,
                     ),
                     Text('Coming Soon',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30),
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 30),
                     )
                   ],
                 ),

@@ -67,6 +67,10 @@ flutter:
           weight: 400
         - asset: fonts\Montserrat-Light.ttf
           weight: 300
+    
+    - family: AppIcons
+      fonts:
+        - asset: fonts\AppIcons.ttf
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

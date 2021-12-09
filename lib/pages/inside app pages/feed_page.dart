@@ -1,19 +1,22 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:trackbet/database/dao/bet_dao.dart';
 
-class FeedPage extends StatefulWidget {
-  const FeedPage({ Key? key }) : super(key: key);
+class BetList extends StatefulWidget {
+  const BetList({ Key? key }) : super(key: key);
 
   @override
-  _FeedPageState createState() => _FeedPageState();
+  _BetListState createState() => _BetListState();
 }
 
-class _FeedPageState extends State<FeedPage> {
+class _BetListState extends State<BetList> {
+  final BetDao _betDao = BetDao();
+
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Color(0xFF33443c),
+    return Container(
+      
     );
   }
 }

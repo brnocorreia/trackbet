@@ -2,10 +2,10 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:trackbet/pages/inside%20app%20pages/feed_page.dart';
 import 'package:trackbet/pages/inside%20app%20pages/graphics_page.dart';
 import 'package:trackbet/pages/inside%20app%20pages/home_page.dart';
 import 'package:trackbet/pages/inside%20app%20pages/profile_page.dart';
+import 'betlist_page.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({ Key? key }) : super(key: key);
@@ -19,7 +19,7 @@ class _DashboardPageState extends State<DashboardPage> {
   int currentIndex = 0;
   final screens = [
     HomePage(),
-    FeedPage(),
+    BetListPage(),
     GraphicsPage(),
     ProfilePage(),
   ];
