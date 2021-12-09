@@ -14,6 +14,15 @@ class _GraphicsPageState extends State<GraphicsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFF33443c),
+      appBar: AppBar(
+        leading: Icon(Icons.bar_chart, color: Color(0xFF33443c),),
+        title: Text("Charts",
+        style: TextStyle(
+          color: Color(0xFF33443c),
+          fontWeight: FontWeight.bold
+        ),),
+        backgroundColor: Colors.white,
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

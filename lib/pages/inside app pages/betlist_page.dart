@@ -28,6 +28,11 @@ class _BetListState extends State<BetListPage> {
         ),),
         backgroundColor: Colors.white,
       ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: 
+        Icon(Icons.add),
+      ) ,
     );
   }
 }

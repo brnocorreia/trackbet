@@ -48,7 +48,7 @@ class _DashboardPageState extends State<DashboardPage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.bar_chart),
-            label: 'Graphics',
+            label: 'Charts',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
